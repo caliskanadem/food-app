@@ -4,7 +4,7 @@ import Flex from "../../styles/Flex";
 export const DetailContainer = styled(Flex)`
   width: 100%;
   flex-direction: column;
-  height: 100vh;
+  height: 110vh;
   justify-content: start;
   background: ${({ theme }) => theme.colors.third};
   color: ${({ theme }) => theme.colors.fourth};
@@ -34,7 +34,7 @@ export const DetailImg = styled.img`
 
 export const DetailMainContainer = styled(Flex)`
   width: 80%;
-  height: 2000px;
+  height: 2100px;
   background: ${({ theme }) => theme.colors.fifth};
   border-radius: 0.5rem;
   margin-bottom: 2rem;
@@ -78,20 +78,28 @@ export const DetailMatsContainer = styled.div`
   width: 400px;
   flex-direction: column;
   text-align: left;
+  padding: 1rem;
   @media (max-width: ${({ theme }) => theme.screens.lg}) {
     width: 880px;
     text-align: center;
     transition: max-height 0.3s ease-in;
+    padding: 1rem;
   }
   @media (max-width: ${({ theme }) => theme.screens.md}) {
     width: 580px;
     transition: max-height 0.3s ease-in;
+    padding: 1rem;
   }
   @media (max-width: ${({ theme }) => theme.screens.sm}) {
-    width: ${({ theme }) => theme.screens.sm};
     transition: max-height 0.3s ease-in;
     width: 380px;
-    margin: 1rem;
+    padding: 1rem;
+  }
+
+  @media (max-width: ${({ theme }) => theme.screens.xs}) {
+    transition: max-height 0.3s ease-in;
+    width: 360px;
+    padding: 1rem;
   }
 `;
 

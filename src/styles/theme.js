@@ -10,7 +10,8 @@ export const lightTheme = {
   screens: {
     lg: "900px",
     md: "600px",
-    sm: "400px",
+    sm: "420px",
+    xs: "380px",
   },
 };
 
